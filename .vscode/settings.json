@@ -17,7 +17,9 @@
         "xstddef": "c",
         "type_traits": "c",
         "utility": "c",
-        "ranges": "c"
+        "ranges": "c",
+        "sstream": "c",
+        "regex": "c"
     },
     "[markdown]": {
         "editor.trimAutoWhitespace": false,
@@ -26,5 +28,18 @@
     "python.formatting.provider": "yapf",
     "[json]": {
 	    "editor.formatOnSave": false
-    }
+    },
+    "C_Cpp.default.defines": [
+        "QMK_KEYBOARD_H=\"quantum.h\""
+    ],
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/usr/avr/include/**",
+        "${workspaceFolder}/quantum/**"
+    ],
+    "C_Cpp.default.browse.path": [
+        "${workspaceFolder}/**",
+        "/usr/avr/include/**",
+        "${workspaceFolder}/quantum/**"
+    ]
 }
